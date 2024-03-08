@@ -1,13 +1,40 @@
-<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
-<script>
-    (function () {
-        window.onload = function () {
-            new BlipChat()
-                .withAppKey('cmFzdHJlaW9mZWJyZXJldW1hdGljYWFndWRhMjpkZTg5YTE1Yi04MDQxLTRhYTgtODY3OS1jOGM1MDVkMDcxODE=')
-                .withButton({"color":"#0096fa","icon":""})
-                .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
-                .withPosition({bottom: '20px', right: '20px'}) // Ajuste a posição conforme desejado
-                .build();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://lijunio.github.io/arc/main/chatbotARC.png'); /* URL da sua imagem no GitHub */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
-    })();
-</script>
+        #blip-chat-widget-container {
+            margin: 20px; /* Ajuste conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <div id="blip-chat-widget-container">
+        <!-- Insira o script do Blip Chat Widget aqui -->
+        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+        <script>
+            (function () {
+                window.onload = function () {
+                    new BlipChat()
+                        .withAppKey('cmFzdHJlaW9mZWJyZXJldW1hdGljYWFndWRhMjpkZTg5YTE1Yi04MDQxLTRhYTgtODY3OS1jOGM1MDVkMDcxODE=')
+                        .withButton({"color":"#0096fa","icon":""})
+                        .withCustomCommonUrl('https://elias-junio-bqqie.chat.blip.ai/')
+                        .build();
+                }
+            })();
+        </script>
+    </div>
+</body>
+</html>
